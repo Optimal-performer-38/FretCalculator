@@ -1,0 +1,112 @@
+
+<html>
+  <head>
+<meta charset='UTF-8'>
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no">
+ 
+ <link rel="stylesheet" href="style.css">
+</head>
+<body id="bodyRoot">
+
+  <div id="menu1">
+  <label class="menuType" id="sidebar" onclick="openBar()">•••</label>
+  <label class="menuType">Fret&nbsp;Calculator</label>
+  <label onclick="showHint()" class="menuType" id="question">?
+    <label id="hint" class="hint" for="question">Nut offset is the distance from your nut. Fret offset is spacing between frets.</label>
+  </label>
+
+  </div>
+  
+
+  <div class="card1" id='body1'>
+    <img id="banner" src="fret.png" class="txt" alt="...">
+    <label class='txt' for="scale">Scale Length:</label>
+    <input type="number" id="scale" placeholder=" input scale distance" value="25">
+    <label class='txt' for="fret">Number of Frets:</label>
+    <input type="number" id="fret"  placeholder="input fret #" min="1" value="18">
+    <label class='txt' for="unit0">Base Unit</label>
+   <select class="option" name="unit0" id="unit0">
+  <option value="0">millimeters</option>
+  <option value="1">centimeters</option>
+  <option value="2" selected>inches</option>
+   </select>
+    
+    <label class='txt' for="unit1">Final Unit</label>
+   <select class="option"  name="unit1" id="unit1">
+  <option value="0">millimeters</option>
+  <option value="1" selected>centimeters</option>
+  <option value="2">inches</option>
+  </select>
+ 
+    <label class='txt' onclick="calc();" id="calcu"> Calculate</label>
+  </div>
+
+ 
+
+  <div class="card2" id="body2">
+   <div onclick="closeButton()" class="closeButton" id="close">Back</div>
+   
+   
+ <table class="tableContainer" id='table1' >
+   <tr class='row' id="leaderRow">
+     <th>Fret #</th>
+     <th>Nut Offset</th>
+     <th>Fret Offset</th>
+   </tr>
+  
+</table> 
+</div>
+<div class='overlay' id='overlay'>
+<div id="bar">
+
+  <div class="banner2">
+    <label>Menu</label>
+    <label onclick="closeBar()" id="exit">•••&nbsp;</label>
+    </div>
+  <div class="barItems">
+  <div onclick="homeButton()" class="items">Home</div>
+  <div onclick="openFont()" class="items" id="fonts">Fonts</div>
+  
+  <div onclick="changeFont()" id="chooseFont" class="fontContainer">
+  <label for="radio1" class="fontItem"><input name="fontRadio" class="radio" type="radio" value="Sans-Serif" id="radio1">
+    Sans-Serif
+  </label>
+  <label for="radio2" class="fontItem"><input name="fontRadio" class="radio" type="radio" value="Monospace" id="radio2">
+  Monospace</label>
+  <label for="radio3" class="fontItem"><input name="fontRadio" class="radio" type="radio" value="cute" id="radio3">
+    Architect's Daughter</label>
+  <label for="radio4" class="fontItem"><input name="fontRadio" class="radio" type="radio" value="cursive" id="radio4">
+    cursive</label>
+  <label for="radio5" class="fontItem"><input name="fontRadio" class="radio" type="radio" value="Courier" id="radio5">
+    Courier</label>
+  </div>
+ 
+  <div onclick="openInfo()" class="items">Info</div>
+  <div onclick="loadingScreen()" class="items" >UI demo</div> 
+ 
+</div>
+</div>
+</div>
+
+<div id="card3" class="card3">
+  <label> Scan this Gcash and buy me Kopiko brown?</label>
+  
+  <img src="Coffee.png" id="qr" class='QR' alt="qr code">
+
+  <label class="donate">hahaha, no.</label>
+  <label class="donate">Kaluta itlog ko</label>
+  <label class="donate">Suffer!</label>
+  <label class="donate">Jesus will provide</label>
+  
+</div>
+
+
+<div class="loaded" id="loadCanvas">
+<canvas width="196" height="196" class="logo" id="drawing"></canvas>
+<label id="logo">By Optimal-performer-38</label>
+</div>
+  <script src='Guitar.js'>
+  </script>
+  
+</body>
+</html>

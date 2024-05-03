@@ -1,0 +1,175 @@
+body{ font-family: 'cute',Sans-Serif;
+  background:no-repeat linear-gradient(to bottom,#f0e9d4,#f5dac9,#d7bdac);
+  overflow: hidden;
+}
+@font-face {
+  font-family: 'cute';
+  src: url('ArchitectsDaughter.woff2') format('woff2');
+}
+#menu1{
+ 
+    display:flex;
+    width:100vw;
+    height: 6vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    justify-content: space-between;
+   overflow:hidden;
+   align-items: center;
+  background-color: #b57a41;
+  border-bottom:solid #664a1d 0.2em;
+  
+}
+#menu1 *{
+  user-select: none;
+ font-size:3vh;
+  padding:15px;
+  border:none;
+  color:#ffffff;
+  display:inline-block;
+  text-shadow: 0px 1px  0px black;
+  background-color: transparent;
+}
+#body1{
+  overflow-y: scroll;
+  overflow-x:hidden;
+  width:90vw;
+  height:88vh;
+  background-color:#f3d8b0;
+ top:8vh;
+ left:5vh;
+ border-radius: 10px;
+  position: relative;
+
+ border-top:solid #fcf7f0 0.2vh;
+ box-shadow: 0vh 0.5vh 0.4vh #473d29;
+display:flex;
+flex-direction: column;
+}
+#body1 *{
+  flex:1;
+  width:55vh;
+ font-size:3vh;
+  position: relative;
+  justify-content: center;
+  background-color:transparent;
+  outline:none;
+  color:#0a0805;
+  display:block;
+  border:none;
+  text-align: center;
+  max-width:90%;
+}
+#banner{
+  
+  height:12vh;
+  width:12vh;
+}
+#body1 .option {
+  user-select: none;
+  font-family:'cute',Sans-Serif;
+  font-size:2.5vh;
+  flex:1;
+  border:solid black;
+  background-color:#ffffff48;
+  border-radius:15em;
+  position: relative;
+  text-align: center;
+  color:#4b4b4b;
+}
+
+#body1 .txt{
+ margin-top:3vh;
+  flex:0;
+  user-select: none;
+}
+
+#scale,#fret{
+  font-size:2.3vh;
+  border:transparent;
+  border-radius:2vh;
+  background-color: #ffffff7f;
+ font-family:'cute',Sans-Serif;
+  border-bottom:solid white 0.15vh;
+}
+#calcu{
+
+  user-select:none;
+  font-family:'cute',Sans-Serif;
+  color:white;
+  width:50vh;
+  border-radius:4vh;
+  border-bottom:solid #4b3e2b 0.3vh ;
+  background-color:#a26752;
+  border-top:solid #dacca3 0.3vh ;
+  flex:0;
+  margin-top:5vh;
+  margin-bottom:10vh;
+  max-width:60%;
+}
+#calcu:active{
+  color:#dcd7bd;
+  background-color:#8b4c67;
+  border:solid white 0.3vh;
+}
+#banner:hover,#menu1:active{
+  opacity:0;
+  transition: opacity 1s ease-in;
+}
+#body2{
+ position: absolute;
+ display:none;
+}
+#body2 .closeButton{
+  background-color:transparent;
+  border:transparent;
+  font-size:2vh;
+  float:right;
+  font-family:'cute',Sans-Serif;
+  width: 8vh;
+  height:4vh;
+}
+#body2 .closeButton:hover{
+  color:white;
+  border:solid black;
+  border-radius:20vh;
+}
+#body2 .listContainer{
+ 
+  position:relative;
+ display:flex;
+ font-size: 2.3vh;
+}
+
+#body2 .list{
+
+  padding: 0.2vh;
+  background-color:transparent;
+  list-style-type: none;
+}
+
+#list1,#list3,#list5{
+  width:12%;
+}
+#list2,#list4{
+  width:28%;
+}
+#body2 .list li{
+
+  margin:0.4vh;
+  padding: 0.2vh;
+  overflow-x:scroll;
+  border-bottom:solid #ffffff 0.2vh;
+  border-radius:2vh;
+  background-color:#ffffff84;
+}
+
+#body2 .list label{
+  padding-left:1.2vh;
+ user-select:none;
+ font-size: 1.2vh;
+  background-color:transparent;
+}
+
+  
